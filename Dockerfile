@@ -6,6 +6,8 @@ RUN apk --update add wget curl git php5 php5-curl php5-openssl php5-json php5-ph
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer 
 
+RUN composer create-project symfony/framework-standard-edition /home/app/symfony
+
 ENTRYPOINT ["/usr/bin/composer"]
 
 CMD ["--help"]

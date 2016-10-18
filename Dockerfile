@@ -1,4 +1,4 @@
-FROM docker pull composer/composer
+FROM composer/composer:1.1
 
 MAINTAINER Haohao Tian <llitfkitfk@gmail.com>
 
